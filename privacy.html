@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for AI Publishing Studio Backup's Google Drive backup integration.">
+  <title>Privacy Policy | AI Publishing Studio Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row"><a class="brand" href="/">AI Publishing Studio <span>Backup</span></a><nav aria-label="Primary"><a href="/privacy.html" aria-current="page">Privacy policy</a></nav></div>
+  </header>
+  <main class="wrap legal" id="main">
+    <div class="eyebrow">Effective 12 November 2026</div>
+    <h1>Privacy policy</h1>
+    <p class="lead">This policy describes the Google user data practices of AI Publishing Studio Backup, a private, owner-operated backup and disaster-recovery utility.</p>
+    <h2>1. Who operates this application</h2>
+    <p>AI Publishing Studio Backup is an owner-operated utility for backing up the owner's AI publishing business records. It is not offered as a public service. Privacy enquiries can be directed to the support email displayed in the application's Google OAuth consent screen.</p>
+    <h2>2. Google user data accessed</h2>
+    <p>The application uses rclone's Google Drive integration to authenticate the owner's own Google account and to access the encrypted backup repository it created in that account. This includes listing the repository's folders and files, uploading encrypted snapshots, reading their metadata, downloading encrypted data for recovery, and checking that the backups are available.</p>
+    <p>The only Google OAuth permission requested is <code>https://www.googleapis.com/auth/drive.file</code> ("See, edit, create and delete only the specific Google Drive files you use with this app"). This permission is limited to files and folders created by the application itself. The application cannot see, read or change any other file in the owner's Google Drive. It does not request access to Gmail, Contacts, Calendar or any other Google service, and it does not read other Google account data.</p>
+    <h2>3. How information is used</h2>
+    <p>Google Drive access is used exclusively to create, maintain, verify, and restore encrypted backups, and to diagnose backup failures. It is not used for advertising, profiling, or unrelated analysis. This website is informational and does not request Google account authorisation itself.</p>
+    <h2>4. Storage and security</h2>
+    <p>Backup data is encrypted locally with Restic before it is transferred to Google Drive using rclone. The encrypted repository is stored in the owner's Google Drive. OAuth credentials used by rclone are stored in the local rclone configuration and are not intentionally published on this site. Decryption of the backup repository requires a separate Restic passphrase.</p>
+    <p>Like any backup system, protection depends on correct configuration, credential security and recovery testing; no online service or encryption system is described as infallible.</p>
+    <h2>5. Sharing and onward transfer</h2>
+    <p>The utility does not sell Google user data or share it with advertisers. Google Drive stores the encrypted backups as the selected hosting provider. The backup tools (Restic and rclone) are open-source programs that run on the owner's own computer; they do not send data anywhere except to Google Drive. Google user data is not transferred to any other third party, for marketing, analytics or any other purpose.</p>
+    <h2>6. Retention and deletion</h2>
+    <p>Encrypted snapshots remain in the owner's Google Drive until deleted by the owner or an explicitly configured and authorised retention process. The owner may revoke the OAuth application's Google account access in Google Account security settings. Revoking access stops future Google Drive operations by that authorisation, but does not automatically delete existing backup snapshots; those can be deleted separately in Drive or through the authorised backup tools.</p>
+    <h2>7. Website information</h2>
+    <p>This static information website does not provide sign-in, advertising, analytics scripts, tracking forms or marketing cookies. The website hosting provider, GitHub Pages, may process ordinary connection and access logs under its own policies.</p>
+    <h2>8. Google API data-use restrictions</h2>
+    <p>AI Publishing Studio Backup's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>Specifically: the application uses Google user data only to provide the backup and recovery features described on this site; it does not transfer it to others except as needed to provide those features or to comply with law; it does not use it for serving advertisements; and no human reads it, because the backup contents are encrypted on the owner's device before upload and are not readable by anyone without the owner's separate decryption passphrase.</p>
+    <h2>9. Changes and questions</h2>
+    <p>This policy will be updated if the application's data-access practices materially change. For questions, use the support email shown in the Google OAuth consent screen.</p>
+    <p class="back"><a href="/">Return to homepage</a></p>
+  </main>
+  <footer class="wrap">AI Publishing Studio Backup · <a href="/privacy.html">Privacy policy</a> · Updated 12 November 2026</footer>
+</body>
+</html>

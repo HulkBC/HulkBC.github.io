@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Publishing Studio Backup is a private, owner-operated utility that stores encrypted backups in the owner's Google Drive.">
+  <title>AI Publishing Studio Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row"><a class="brand" href="/">AI Publishing Studio <span>Backup</span></a><nav aria-label="Primary"><a href="/privacy.html">Privacy policy</a></nav></div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="eyebrow">Private utility · Owner-operated</div>
+    <h1>Encrypted backups for AI Publishing Studio</h1>
+    <p class="lead">AI Publishing Studio Backup is a private utility that uses Google Drive to store encrypted backup snapshots of the owner's AI publishing development and operational records.</p>
+    <div class="panel">
+      <h2>What it does</h2>
+      <p>The utility uses Restic to encrypt backup archives before they are uploaded through rclone to a designated folder in the owner's Google Drive. It also lists snapshots, checks their integrity, and retrieves encrypted archives for restoration when needed.</p>
+      <p>This is not a public product, Google Drive file manager, or invitation for other people to connect their accounts. The OAuth application is used solely by its owner for backup and disaster recovery.</p>
+    </div>
+    <h2>Why Google Drive access is requested</h2>
+    <p>The utility needs Google Drive access to upload, find, verify, and restore encrypted backups in an existing Drive folder. It requests only the Google Drive <code>drive.file</code> permission, which limits the utility to files and folders that it created itself: the encrypted backup repository. It cannot see or open any other file in the owner's Drive.</p>
+    <p>Backup contents are encrypted on the owner's device before upload. Google Drive hosts the encrypted files but does not receive the Restic decryption passphrase through this website.</p>
+    <h2>Privacy and contact</h2>
+    <p>Read our <a href="/privacy.html">privacy policy</a> for what data is accessed, how it is used, stored, and deleted. For questions about this owner-operated application, use the support contact email shown on its Google OAuth consent screen.</p>
+  </main>
+  <footer class="wrap">AI Publishing Studio Backup · <a href="/privacy.html">Privacy policy</a> · Updated 12 November 2026</footer>
+</body>
+</html>
