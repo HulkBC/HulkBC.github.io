@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trading Studio Backup is a private, owner-operated utility for encrypted backups to the owner's Google Drive.">
+  <title>Trading Studio Backup</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./">Trading Studio <span>Backup</span></a>
+      <nav aria-label="Primary"><a href="./privacy.html">Privacy policy</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="eyebrow">Private utility · Owner-operated</div>
+    <h1>Encrypted Google Drive backups for Trading Studio</h1>
+    <p class="lead">Trading Studio Backup is a private desktop backup and recovery utility used by its owner to store encrypted copies of specifically approved local files in the owner's own Google Drive account.</p>
+    <div class="panel">
+      <h2>What this application does</h2>
+      <p>The utility uses <strong>restic</strong> to encrypt selected files on the owner's computer, then uses <strong>rclone</strong> to transfer encrypted repository data to Google Drive. It can check backup integrity and restore snapshots to an isolated location for recovery testing.</p>
+      <p>Backups are limited to files explicitly approved by the owner. Not all Trading Studio data is included, and a successful backup does not guarantee recovery of excluded information.</p>
+    </div>
+    <h2>Why Google Drive permission is requested</h2>
+    <p>The application requests the Google Drive <code>drive.file</code> permission (<code>https://www.googleapis.com/auth/drive.file</code>) to create, locate, update, verify and retrieve the encrypted backup files that the owner uses with this application. It does not request broad access to the owner's entire Google Drive, Gmail or other Google services.</p>
+    <h2>How privacy is protected</h2>
+    <p>Backup contents are encrypted locally before upload, using a separate restic passphrase controlled by the owner. Google Drive stores the encrypted repository; the public information website does not receive backup files, OAuth credentials or the restic passphrase.</p>
+    <p>This is not a public backup product or a service for other users to connect their accounts. This website provides information only and does not initiate Google sign-in.</p>
+    <h2>Privacy and contact</h2>
+    <p>See the <a href="./privacy.html">privacy policy</a> for details of Google data access, storage, retention, deletion and revocation. For questions, use the support email identified on the application's Google OAuth consent screen.</p>
+  </main>
+  <footer class="wrap">Trading Studio Backup · <a href="./privacy.html">Privacy policy</a> · Updated 16 November 2026</footer>
+</body>
+</html>
