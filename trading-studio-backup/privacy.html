@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Trading Studio Backup's owner-operated Google Drive backup integration.">
+  <title>Privacy Policy | Trading Studio Backup</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./">Trading Studio <span>Backup</span></a>
+      <nav aria-label="Primary"><a href="./privacy.html" aria-current="page">Privacy policy</a></nav>
+    </div>
+  </header>
+  <main class="wrap legal" id="main">
+    <div class="eyebrow">Effective 16 November 2026</div>
+    <h1>Privacy policy</h1>
+    <p class="lead">This policy explains how Trading Studio Backup, a private desktop utility operated solely by its owner, uses Google Drive data to make and restore encrypted backups.</p>
+
+    <h2>1. Operator and scope</h2>
+    <p>The application is used by its owner for personal Trading Studio development backup and recovery. It is not offered to members of the public. For privacy inquiries, contact the operator using the support email displayed on the application's Google OAuth consent screen.</p>
+
+    <h2>2. Google user data accessed</h2>
+    <p>Trading Studio Backup uses rclone's Google Drive integration to access only the specific Drive files and folders the owner creates or uses with this application for an encrypted restic repository. Operations may include creating and listing folders and files, reading repository metadata, uploading encrypted data, checking its integrity, downloading it for restoration and deleting approved backup data when explicitly requested by the owner.</p>
+    <p>The OAuth scope requested is <code>https://www.googleapis.com/auth/drive.file</code> (access to the specific Google Drive files used with this application). The application does not request access to Gmail, Contacts, Calendar or unrelated Drive files.</p>
+
+    <h2>3. Purpose and use of data</h2>
+    <p>Google Drive access is used only to initialise and operate the owner's encrypted backup repository, verify that backups are accessible and recover selected files. It is not used for advertising, profiling, marketing or unrelated analytics. This public website does not handle OAuth sign-in or collect backup data.</p>
+
+    <h2>4. Encryption and security</h2>
+    <p>For an approved backup run, restic encrypts selected files on the owner's computer before rclone uploads encrypted repository data to Google Drive. A separate owner-controlled restic passphrase is necessary to decrypt snapshots. The owner keeps Google OAuth credentials in the dedicated local rclone configuration; they are not published on this website. Security also depends on protecting the computer, account and recovery credentials.</p>
+    <p>Only explicitly approved local files are selected for backup. Some local Trading Studio information may be excluded, so this utility does not imply that every local file is recoverable.</p>
+
+    <h2>5. Sharing and third parties</h2>
+    <p>Google stores the encrypted repository as the owner's chosen cloud storage provider. The application does not sell Google user data, share it with advertisers or use it for advertising. It does not deliberately send Google user data to another application or service beyond those needed to perform the described backup and restore operations. GitHub Pages serves this public informational website; it does not receive the encrypted backups through this website.</p>
+
+    <h2>6. Retention, deletion and revocation</h2>
+    <p>Encrypted backup data remains in the owner's Google Drive until the owner deletes it or separately authorises a retention procedure. The owner may revoke the app's access under Google Account security settings. Revocation stops future authorised Drive access, but does not automatically remove existing encrypted files; the owner can delete those separately in Google Drive. The local rclone OAuth configuration and local restic status files may be deleted or replaced by the owner as part of credential rotation or recovery.</p>
+
+    <h2>7. Website privacy</h2>
+    <p>This static website has no sign-in form, tracking scripts, advertising or analytics cookies. GitHub Pages, as the website host, may process standard connection and access logs under its own privacy practices.</p>
+
+    <h2>8. Google API Services User Data Policy</h2>
+    <p>The use and transfer of information received from Google APIs is intended to comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>, including its Limited Use requirements. Google user data is used only for the backup and restore functionality described here, and is not used to serve advertisements or transferred for unrelated purposes.</p>
+
+    <h2>9. Changes and questions</h2>
+    <p>This policy will be revised if the application's actual data-access or transfer practices materially change. Privacy questions may be directed to the operator through the support email on the Google OAuth consent screen.</p>
+    <p class="back"><a href="./">Return to the Trading Studio Backup homepage</a></p>
+  </main>
+  <footer class="wrap">Trading Studio Backup · <a href="./privacy.html">Privacy policy</a> · Updated 16 November 2026</footer>
+</body>
+</html>
